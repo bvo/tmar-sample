@@ -1,0 +1,23 @@
+Addition test
+
+/sequence
+[ op1 | step | op2 | results ? |
+| 1   |    + |   1 |         2 |
+| 2   |    - |   1 |         1 |
+| 3   |    * |   2 |         6 |
+| 4   |    / |   2 |         2 |
+
+you can change colums order
+
+/sequence
+[ step | op1 | op2 | results ? |
+|    + |   6 |   1 |         7 |
+|    * |   3 |   4 |        12 |
+
+and 
+
+/sequence
+[ step | op1 | op2 | some useless comment | results ? |
+|    + |   6 |   1 |  bla bla             |         7 |
+|    * |   3 |   4 |                      |        12 |
+

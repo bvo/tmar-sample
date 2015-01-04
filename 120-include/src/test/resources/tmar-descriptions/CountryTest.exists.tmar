@@ -1,0 +1,8 @@
+Country test
+
+/include Country.inc
+
+/each
+[ code | exists ? |
+| fr   | true     |
+| es   | false    |

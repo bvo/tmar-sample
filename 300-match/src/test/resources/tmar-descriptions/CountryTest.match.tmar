@@ -1,0 +1,57 @@
+Country test
+
+/table countries
+[ country       | language   |
+| Brazil        | Portuguese |
+| France        | French     |
+| Ireland       | English    |
+| Portugal      | Portuguese |
+| Spain         | French     |
+| United States | English    |
+
+/table countries_Portuguese
+[ country       |
+| Portugal      |
+| Brazil        |
+
+/table countries_English
+[ country       |
+| Ireland       |
+| United States |
+
+
+/each 
+[ language   | expected | results ?                             |
+
+| Portuguese |       OK | ? in @countries                      |
+| Portuguese |       OK | ? orderedIn @countries               |
+| Portuguese |       KO | ? match @countries                   |
+| Portuguese |       KO | ? orderedMatch @countries            |
+
+| Portuguese |       OK | ? in @countries_Portuguese           |
+| Portuguese |       KO | ? orderedIn @countries_Portuguese    |
+| Portuguese |       OK | ? match @countries_Portuguese        |
+| Portuguese |       KO | ? orderedMatch @countries_Portuguese |
+
+| Portuguese |       KO | ? in @countries_English              |
+| Portuguese |       KO | ? orderedIn @countries_English       |
+| Portuguese |       KO | ? match @countries_English           |
+| Portuguese |       KO | ? orderedMatch @countries_English    |
+
+
+
+
+| English |       OK | ? in @countries                         |
+| English |       OK | ? orderedIn @countries                  |
+| English |       KO | ? match @countries                      |
+| English |       KO | ? orderedMatch @countries               |
+
+| English |       KO | ? in @countries_Portuguese              |
+| English |       KO | ? orderedIn @countries_Portuguese       |
+| English |       KO | ? match @countries_Portuguese           |
+| English |       KO | ? orderedMatch @countries_Portuguese    |
+
+| English |       OK | ? in @countries_English                 |
+| English |       OK | ? orderedIn @countries_English          |
+| English |       OK | ? match @countries_English              |
+| English |       OK | ? orderedMatch @countries_English       |

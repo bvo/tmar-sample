@@ -1,0 +1,25 @@
+Addition test
+
+/sequence
+/inline
+
+The conversion [to] uppercase |
+for [text] """
+My tailor is RICH
+""" |
+
+will [result ?] """
+MY TAILOR IS RICH
+""" |
+
+
+/inline
+
+The conversion [to] lowercase |
+for [text] """
+My tailor is RICH
+""" |
+
+will [result ?] """
+my tailor is rich
+""" |

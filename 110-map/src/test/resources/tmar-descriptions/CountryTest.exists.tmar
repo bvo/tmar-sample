@@ -1,0 +1,13 @@
+Country test
+
+/map countries with label
+[ code | label         |
+| fr   | France        |
+| us   | United-States |
+
+
+
+/each
+[ code | exists ? |
+| fr   | true     |
+| es   | false    |

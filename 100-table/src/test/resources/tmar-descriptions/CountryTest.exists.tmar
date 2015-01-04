@@ -1,0 +1,25 @@
+Country test
+
+/table countries with label
+[ code | label         |
+| fr   | France        |
+| us   | United-States |
+
+
+
+/each
+[ code | exists ? |
+| fr   | true     |
+| sp   | false    |
+
+
+Complete table
+
+/table countries with label
+[ code | label        |
+| sp   | Spain        |
+
+
+/each
+[ code | exists ? |
+| sp   | true     |

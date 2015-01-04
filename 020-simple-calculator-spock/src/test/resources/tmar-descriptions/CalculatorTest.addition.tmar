@@ -1,0 +1,5 @@
+Addition test
+
+/each
+[ op1 | op2 | results ? |
+| 1   |   1 |         2 |
