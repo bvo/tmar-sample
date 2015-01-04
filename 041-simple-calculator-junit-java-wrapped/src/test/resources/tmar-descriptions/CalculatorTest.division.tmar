@@ -1,0 +1,5 @@
+Division test
+
+/sequence
+[ op1 | op2 | results ? |
+| 10  |   2 |         5 |
