@@ -2,7 +2,7 @@
 
 debug=0
 
-mvn="/bvo/apps/maven/apache-maven-3.2.1/bin/mvn --settings /Users/pro/Documents/workspace_st/settings.xml --batch-mode --debug"
+mvn="mvn --settings settings.xml --batch-mode --debug"
 gradle="gradle --daemon"
 
 function check () {
