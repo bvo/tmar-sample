@@ -2,7 +2,7 @@
 
 debug=0
 
-mvn="mvn --settings settings.xml --batch-mode --debug"
+mvn="mvn --settings ../settings.xml --batch-mode --debug"
 gradle="gradle --daemon"
 
 function check () {
