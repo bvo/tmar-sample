@@ -32,8 +32,8 @@ under the License.
       
       <repositories>
         <repository>
-          <id>codehaus-repository</id>
-          <url>https://nexus.codehaus.org/</url>
+          <id>jspresso-repository</id>
+          <url>http://repository.jspresso.org/maven2</url>
           <releases>
             <enabled>true</enabled>
           </releases>
@@ -42,8 +42,8 @@ under the License.
           </snapshots>
         </repository>
         <repository>
-          <id>codehaus-snapshots-repository</id>
-          <url>https://nexus.codehaus.org/snapshots/</url>
+          <id>jspresso-snapshots-repository</id>
+          <url>http://repository.jspresso.org/maven2-snapshots</url>
           <releases>
             <enabled>false</enabled>
           </releases>
