@@ -5,14 +5,14 @@ repositories {
     url 'http://repository.jspresso.org/maven2/'
   }
   maven {
-    url: 'http://repository.jspresso.org/maven2-snapshots'
+    url 'http://repository.jspresso.org/maven2-snapshots'
   }
 
   maven {
-    url: 'https://nexus.codehaus.org/'
+    url 'https://nexus.codehaus.org/'
   }
   maven {
-    url: 'https://nexus.codehaus.org/snapshots/'
+    url 'https://nexus.codehaus.org/snapshots/'
   }
 
   mavenCentral()
