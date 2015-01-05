@@ -1,15 +1,24 @@
 apply plugin: 'groovy'
 
 repositories {
-	maven {
-		url "/server/repository_maven_jspresso/"
-	}
-    mavenCentral()
+  maven {
+    url "http://repository.jspresso.org/maven2/"
+  }
+  maven {
+    url "http://repository.jspresso.org/maven2-snapshots"
+  }
+  maven {
+    url "https://nexus.codehaus.org/"
+  }
+  maven {
+    url "https://nexus.codehaus.org/snapshots/"
+  }
+  mavenCentral()
 }
 
 dependencies {
-    compile 'org.codehaus.groovy:groovy-all:2.2.0'
-    testCompile 'org.jspresso.contrib:jspresso-tmar:1.5'
-	testCompile 'org.slf4j:slf4j-simple:1.7.6'
-	testCompile 'junit:junit:4.11'
+  compile 'org.codehaus.groovy:groovy-all:2.2.0'
+  testCompile 'org.jspresso.contrib:jspresso-tmar:1.5'
+  testCompile 'org.slf4j:slf4j-simple:1.7.6'
+  testCompile 'junit:junit:4.11'
 }
