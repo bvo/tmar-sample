@@ -27,6 +27,9 @@ RUN mkdir -p /usr/local/apache-maven \
   && curl -s http://apache.websitebeheerjd.nl/maven/maven-3/$MAVEN_VERSION/binaries/apache-maven-$MAVEN_VERSION-bin.tar.gz \
      | tar -zxC /usr/local/apache-maven
 
+## git install
+#
+RUN apt-get update && apt-get -y install git
 
 ## set work directory
 #

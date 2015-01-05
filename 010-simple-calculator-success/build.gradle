@@ -1,14 +1,18 @@
 apply plugin: 'groovy'
 
 repositories {
-  mavenDeployer {
-    repository (url: 'http://repository.jspresso.org/maven2/')
-    snapshoRepository (url: 'http://repository.jspresso.org/maven2-snapshots')
+  maven {
+    url 'http://repository.jspresso.org/maven2/'
+  }
+  maven {
+    url: 'http://repository.jspresso.org/maven2-snapshots'
   }
 
-  mavenDeployer {
-    repository (url: 'https://nexus.codehaus.org/')
-    snapshoRepository (url: 'https://nexus.codehaus.org/snapshots/')
+  maven {
+    url: 'https://nexus.codehaus.org/'
+  }
+  maven {
+    url: 'https://nexus.codehaus.org/snapshots/'
   }
 
   mavenCentral()
